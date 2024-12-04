@@ -78,13 +78,16 @@ struct IpaTool {
         }
         
         allFiles = try manager.contentsOfDirectory(atPath: projectPath.appPath("\(projectName).xcodeproj/xcshareddata/xcschemes")
-        )
-        scheme = allFiles[0].components(separatedBy: ".").first ?? ""
+        ).filter {
+            let str = $0.lowercased()
+            return !str.contains("debug") && !str.contains("dev")
+        }
+        scheme = allFiles.first?.components(separatedBy: ".").first ?? ""
         guard !scheme.isEmpty else {
             throw Error(desc: "cannot find xcschemes")
         }
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd HH-mm-ss"
         let packageDirectory = NSHomeDirectory()
             .appPath("Desktop/Program/2024/ipatool/\(projectName)_ipa")
         exportIpaPath = packageDirectory.appPath(formatter.string(from: Date()))
@@ -147,9 +150,8 @@ extension IpaTool {
         return Output(pipe: Process.executable(launchPath: "/usr/bin/xcodebuild", arguments: arguments))
     }
     //上传蒲公英
-    func update(){
+    func updload(_ ipaPath: String) {
         
-        let ipaPath = exportIpaPath.appPath("\(scheme).ipa")
         
         let upload = AF.upload(multipartFormData: { formdata in
             formdata.append(pgyerKey.data(using: .utf8)!, withName: "_api_key")

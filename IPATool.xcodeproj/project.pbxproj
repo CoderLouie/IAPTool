@@ -32,7 +32,7 @@
 		B6AE52642CFFF01F009E239E /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
 		B6AE52682CFFF0B2009E239E /* ExportOptions_realme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_realme.plist; sourceTree = "<group>"; };
 		B6AE52692CFFF0B2009E239E /* ExportOptions_coltmptest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_coltmptest.plist; sourceTree = "<group>"; };
-		B6AE526A2CFFF4C1009E239E /* ExportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ExportOptions.plist; path = "../../../dis/TestMe 2024-12-03 15-07-19/ExportOptions.plist"; sourceTree = "<group>"; };
+		B6D30F692D0005300027E6E4 /* ExportOptions_collage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_collage.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			children = (
 				B6AE52692CFFF0B2009E239E /* ExportOptions_coltmptest.plist */,
 				B6AE52682CFFF0B2009E239E /* ExportOptions_realme.plist */,
-				B6AE526A2CFFF4C1009E239E /* ExportOptions.plist */,
+				B6D30F692D0005300027E6E4 /* ExportOptions_collage.plist */,
 				B6AE52652CFFF01F009E239E /* Source */,
 				B6AE52572CFFEEAA009E239E /* main.swift */,
 			);
