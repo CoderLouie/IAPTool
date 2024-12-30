@@ -11,6 +11,8 @@
 		B6AE52602CFFEFD3009E239E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6AE525F2CFFEFD3009E239E /* Alamofire */; };
 		B6AE52662CFFF04D009E239E /* IpaTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE52632CFFF01F009E239E /* IpaTool.swift */; };
 		B6AE52672CFFF04F009E239E /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AE52642CFFF01F009E239E /* Process.swift */; };
+		B6CD70312D1FFC4100037F19 /* PgyerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD70302D1FFC4100037F19 /* PgyerTest.swift */; };
+		B6CD70342D1FFDA700037F19 /* AssetsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CD70332D1FFDA700037F19 /* AssetsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,8 @@
 		B6AE52642CFFF01F009E239E /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
 		B6AE52682CFFF0B2009E239E /* ExportOptions_realme.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_realme.plist; sourceTree = "<group>"; };
 		B6AE52692CFFF0B2009E239E /* ExportOptions_coltmptest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_coltmptest.plist; sourceTree = "<group>"; };
+		B6CD70302D1FFC4100037F19 /* PgyerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgyerTest.swift; sourceTree = "<group>"; };
+		B6CD70332D1FFDA700037F19 /* AssetsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsTest.swift; sourceTree = "<group>"; };
 		B6D30F692D0005300027E6E4 /* ExportOptions_collage.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ExportOptions_collage.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,10 +70,8 @@
 		B6AE52562CFFEEAA009E239E /* IPATool */ = {
 			isa = PBXGroup;
 			children = (
-				B6AE52692CFFF0B2009E239E /* ExportOptions_coltmptest.plist */,
-				B6AE52682CFFF0B2009E239E /* ExportOptions_realme.plist */,
-				B6D30F692D0005300027E6E4 /* ExportOptions_collage.plist */,
-				B6AE52652CFFF01F009E239E /* Source */,
+				B6CD70322D1FFD0200037F19 /* Assets */,
+				B6CD702E2D1FFC1500037F19 /* Pgyer */,
 				B6AE52572CFFEEAA009E239E /* main.swift */,
 			);
 			path = IPATool;
@@ -82,6 +84,34 @@
 				B6AE52642CFFF01F009E239E /* Process.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		B6CD702E2D1FFC1500037F19 /* Pgyer */ = {
+			isa = PBXGroup;
+			children = (
+				B6CD70302D1FFC4100037F19 /* PgyerTest.swift */,
+				B6AE52652CFFF01F009E239E /* Source */,
+				B6CD702F2D1FFC2100037F19 /* Resource */,
+			);
+			path = Pgyer;
+			sourceTree = "<group>";
+		};
+		B6CD702F2D1FFC2100037F19 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B6AE52692CFFF0B2009E239E /* ExportOptions_coltmptest.plist */,
+				B6AE52682CFFF0B2009E239E /* ExportOptions_realme.plist */,
+				B6D30F692D0005300027E6E4 /* ExportOptions_collage.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B6CD70322D1FFD0200037F19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B6CD70332D1FFDA700037F19 /* AssetsTest.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CD70342D1FFDA700037F19 /* AssetsTest.swift in Sources */,
 				B6AE52662CFFF04D009E239E /* IpaTool.swift in Sources */,
+				B6CD70312D1FFC4100037F19 /* PgyerTest.swift in Sources */,
 				B6AE52582CFFEEAA009E239E /* main.swift in Sources */,
 				B6AE52672CFFF04F009E239E /* Process.swift in Sources */,
 			);
